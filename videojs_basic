@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    
+    <title>video test</title>
+</head>
+<body>
+    <video
+        id="my-video"
+        class="video-js vjs-big-play-centered"
+        width="640"
+        height="264"
+        controls
+        preload="metadata"
+        autoplay="autoplay"
+        muted="muted"
+        <!--크롬의 경우 muted를 설정해야 autoplay가 적용된다-->
+        data-setup="{}">
+        <source src="http://-fileAddress-.m3u8" type="application/x-mpegURL"/> 
+        <!--hls파일, 라이브 및 동영상-->
+    </video>
+</body>
+
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+</html>
